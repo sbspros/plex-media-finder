@@ -1,0 +1,17 @@
+# ignore the venv files
+/bin
+/include
+/lib
+/lib64
+/pyvenv.cfg
+/share
+
+# ignore log files generated
+/sample/log/logfile.log
+
+# python control files
+/code/common/__pycache__
+/code/exceptions/__pycache__
+/code/models/__pycache__
+/code/views/__pycache__
+
