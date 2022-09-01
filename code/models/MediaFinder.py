@@ -65,3 +65,8 @@ class MediaFinder(BaseClass):
             self._bc.log.error("\t"+":"+traceback.format_exc())
             raise MediaFinderFailed
 
+    def show_to_search(self,show_info:{})->str:
+        return '{show_name}-S{season:0>2}E{eposide:0>2}'.format(\
+            show_name=show_info['name'].replace(' ', '-'),\
+            season=show_info['season'],\
+            eposide=show_info['episode'])
